@@ -14,7 +14,7 @@ const Menu = () => {
             try {
                 const params = new URLSearchParams(window.location.search);
                 const tb_no = params.get('tb_no');
-                const response = await axios.get('http://localhost:8000/menu', {
+                const response = await axios.get('https://hi-foodiez-fe.vercel.app/menu', {
                     params: {
                         tb_no: tb_no
                     }
@@ -64,7 +64,7 @@ const Menu = () => {
                         quantity: item.quantity
                     }
                 });
-                const response = await fetch('http://localhost:8000/order', {
+                const response = await fetch('https://hi-foodiez-fe.vercel.app/order', {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"
