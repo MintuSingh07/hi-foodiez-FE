@@ -9,7 +9,9 @@ nav {
 section {
     padding-top: 1rem;
 }
-
+button{
+    cursor: pointer;
+}
 #table_no {
     padding: 1rem 0;
     font-weight: 300;
