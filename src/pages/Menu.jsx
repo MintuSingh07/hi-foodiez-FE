@@ -15,7 +15,7 @@ const Menu = () => {
             try {
                 const params = new URLSearchParams(window.location.search);
                 const tb_no = params.get('tb_no');
-                const response = await axios.get('https://hi-foodiez-be-1.onrender.com/menu', {
+                const response = await axios.get('https://hi-foodiez-be.onrender.com/menu', {
                     params: {
                         tb_no: tb_no
                     }
@@ -65,7 +65,7 @@ const Menu = () => {
                         quantity: item.quantity
                     }
                 });
-                const response = await fetch('https://hi-foodiez-be-1.onrender.com/order', {
+                const response = await fetch('https://hi-foodiez-be.onrender.com/order', {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"
